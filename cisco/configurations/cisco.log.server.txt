@@ -1,0 +1,17 @@
+
+conf t
+logging host x.x.x.x 
+logging source-interface Loopback0
+service sequence numbers
+service timestamps log
+logging enable
+logging trap informational
+
+
+
+
+archive
+ log config
+  logging enable
+
+show archive log config all
